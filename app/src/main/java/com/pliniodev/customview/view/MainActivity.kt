@@ -1,12 +1,16 @@
 package com.pliniodev.customview.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
+import android.view.View
+import android.view.View.OnTouchListener
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.pliniodev.customview.databinding.ActivityMainBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,5 +31,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, ChordViewActivity::class.java))
         }
 
+        binding.squareButton.setOnClickListener {
+            binding.squareButton.setSquareButton()
+        }
     }
+
 }

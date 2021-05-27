@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomView">
-        <activity android:name=".view.SmileActivity"></activity>
+        <activity android:name=".view.SmileActivity"/>
         <activity android:name=".view.ChordViewActivity" />
         <activity android:name=".view.MainActivity">
             <intent-filter>

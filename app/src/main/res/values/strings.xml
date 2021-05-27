@@ -3,4 +3,6 @@
     <string name="login">Login</string>
     <string name="login_loading_state">Please Wait…</string>
     <string name="next_custom_view">Próxima custom view</string>
+    <string name="ativado">Ativado</string>
+    <string name="desativado">Desativado</string>
 </resources>

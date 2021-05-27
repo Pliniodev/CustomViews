@@ -7,6 +7,19 @@
     android:padding="16dp"
     tools:context=".view.MainActivity">
 
+    <com.pliniodev.customview.view.customviews.SquareButton
+        android:id="@+id/square_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:square_button_deactive="@string/desativado"
+        app:square_button_active="@string/ativado"
+        app:square_img_src_active="@drawable/ic_baseline_check_24"
+        app:square_img_src_deactive="@drawable/ic_baseline_clear_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <com.pliniodev.customview.view.customviews.ProgressButton
         android:id="@+id/progress_button"
         android:layout_width="0dp"

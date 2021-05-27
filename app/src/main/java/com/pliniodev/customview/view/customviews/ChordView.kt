@@ -7,6 +7,7 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
 import android.view.View
+import com.pliniodev.customview.R
 
 class ChordView(
     context: Context,
@@ -61,12 +62,12 @@ class ChordView(
         canvas?.drawPath(path, drawPaint)
     }
 
-    private fun drawCircleFingering(canvas: Canvas?){
+    private fun drawCircleFingering(canvas: Canvas?) {
         val radius = 60f
         val casa1x1 = size * 0.20f
         val casa1y1 = size * 0.18f
 
-        canvas?.drawCircle(casa1x1,casa1y1,radius,drawPaint)
+        canvas?.drawCircle(casa1x1, casa1y1, radius, drawPaint)
     }
 
     private fun drawTextFingering(canvas: Canvas?) {
@@ -87,7 +88,7 @@ class ChordView(
         setMeasuredDimension(size, size)
     }
 
-    private fun drawSquareLine(canvas: Canvas?){
+    private fun drawSquareLine(canvas: Canvas?) {
 
         //linha esquerda
         path.moveTo(size * 0.20f, size * 0.10f)
@@ -118,4 +119,5 @@ class ChordView(
         drawPaint.strokeCap = Paint.Cap.ROUND
     }
 }
+
 

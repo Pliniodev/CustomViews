@@ -4,4 +4,16 @@
         <attr name="progress_button_title" format="string"/>
         <attr name="progress_button_loading_title" format="string"/>
     </declare-styleable>
+
+    <declare-styleable name="ChordView">
+        <attr name="position" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="SquareButton">
+        <attr name="square_button_active" format="string"/>
+        <attr name="square_button_deactive" format="string"/>
+        <attr name="square_img_src_active" format="reference"/>
+        <attr name="square_img_src_deactive" format="reference"/>
+<!--        <attr name="sqare_button_pressed" format="string"/>-->
+    </declare-styleable>
 </resources>

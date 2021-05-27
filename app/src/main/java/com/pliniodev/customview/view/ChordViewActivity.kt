@@ -11,8 +11,18 @@ class ChordViewActivity : AppCompatActivity() {
         val binding = ActivityChordViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+//        binding.btnDedoUm.setOnClickListener {
+//
+//            binding.chordView.setFingerOne(1)
+//        }
+
+
+
         binding.nextViewButtom.setOnClickListener {
             startActivity(Intent(this@ChordViewActivity, SmileActivity::class.java))
         }
+
+
     }
 }

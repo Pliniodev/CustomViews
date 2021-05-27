@@ -105,11 +105,11 @@ class ProgressButton @JvmOverloads constructor(
         }
     }
 
-    fun setLoading() {
+    private fun setLoading() {
         state = ProgressButtonState.Loading
     }
 
-    fun setNormal() {
+    private fun setNormal() {
         state = ProgressButtonState.Normal
     }
 
@@ -117,7 +117,9 @@ class ProgressButton @JvmOverloads constructor(
      * Sealed class com os estados possíveis para essa CustomView
      * utilizar a sealedClass aqui é das possíveis implementações
      * para os estados da CustomView
+     * progressVisibility corresponde ao progressbar
      */
+
     sealed class ProgressButtonState(val isEnabled: Boolean, val progressVisibility: Int) {
         object Normal : ProgressButtonState(true, View.GONE)
         object Loading : ProgressButtonState(false, View.VISIBLE)
